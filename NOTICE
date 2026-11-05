@@ -1,0 +1,14 @@
+DFe.NET — fork alexgauna/DFe.NET
+
+Este repositório é um fork de ZeusAutomacao/DFe.NET (https://github.com/ZeusAutomacao/DFe.NET),
+Copyright (c) Adenilton Batista da Silva / Zeusdev Tecnologia LTDA ME e contribuidores,
+distribuído sob a GNU Lesser General Public License v2.1 (ver LICENSE) — os cabeçalhos dos
+arquivos permitem "a versão 2.1 da Licença, ou (a seu critério) qualquer versão posterior".
+
+Os avisos de copyright e cabeçalhos originais foram preservados. As alterações próprias deste
+fork estão listadas em CHANGELOG-FORK.md, são publicadas neste repositório e permanecem sob a
+mesma licença.
+
+Pacotes publicados a partir deste fork usam IDs próprios (AlexGauna.DFe.*) e não são
+distribuídos pela ZeusAutomacao. Não incluem as DLLs comerciais do FastReport.Net presentes
+nas pastas */Dlls do repositório.

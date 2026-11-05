@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFrameworks>netstandard2.0;net10.0</TargetFrameworks>
 		<PackageId>Zeus.Net.NFe.Danfe.Html</PackageId>
 		<Title>Zeus.Net.NFe.Danfe.Html</Title>
 		<Authors>ZeusAutomacao</Authors>
@@ -11,7 +11,15 @@
 
 	<ItemGroup>
 		<PackageReference Include="NetBarcode" Version="1.7.0" />
-		<PackageReference Include="Zeus.Net.NFe.NFCe" Version="2025.12.22.2042" />
+		<!-- compat/dotnet10: NetBarcode 1.7.0 traz SixLabors.ImageSharp 2.1.1. A 2.1.13 reduz, mas NÃO elimina, as vulnerabilidades altas (NU1903). Por isso NFe.Danfe.Html ainda não é empacotado (ver CHANGELOG-FORK.md). -->
+		<PackageReference Include="SixLabors.ImageSharp" Version="2.1.13" />
+	</ItemGroup>
+
+	<!-- compat/dotnet10: referencia os projetos do repositório em vez do pacote Zeus.Net.NFe.NFCe 2025.12.22.2042 (defasado) -->
+	<ItemGroup>
+		<ProjectReference Include="..\DFe.Utils\DFe.Utils.csproj" />
+		<ProjectReference Include="..\NFe.Classes\NFe.Classes.csproj" />
+		<ProjectReference Include="..\NFe.Utils\NFe.Utils.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

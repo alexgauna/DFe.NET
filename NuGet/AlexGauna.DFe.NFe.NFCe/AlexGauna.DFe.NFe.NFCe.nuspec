@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pacote derivado do Zeus DFe.NET (https://github.com/ZeusAutomacao/DFe.NET), mantido no fork alexgauna/DFe.NET.
+     Não reutiliza IDs Zeus.Net.*. Licença: GNU LGPL v2.1 (arquivo LICENSE incluído). -->
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>AlexGauna.DFe.NFe.NFCe</id>
+    <version>$version$</version>
+    <title>DFe.NET (fork alexgauna) - NF-e e NFC-e para .NET 10</title>
+    <authors>Zeus DFe.NET contributors; alexgauna</authors>
+    <license type="file">LICENSE</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/alexgauna/DFe.NET</projectUrl>
+    <repository type="git" url="https://github.com/alexgauna/DFe.NET" commit="$commit$" />
+    <description>Build do Zeus DFe.NET (NF-e/NFC-e) a partir do fork alexgauna/DFe.NET, branch compat/dotnet10, com target net10.0 e dependências declaradas. Commit upstream de base: $upstream$. Ver NOTICE e CHANGELOG-FORK.md.</description>
+    <releaseNotes>Base upstream ZeusAutomacao/DFe.NET@$upstream$. Alterações próprias: ver CHANGELOG-FORK.md no commit $commit$.</releaseNotes>
+    <language>pt-BR</language>
+    <tags>nfe nfce dfe sefaz zeus</tags>
+    <dependencies>
+      <group targetFramework="net10.0">
+        <dependency id="System.Security.Cryptography.Xml" version="10.0.14" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="../../LICENSE" target="LICENSE" />
+    <file src="../../NOTICE" target="NOTICE" />
+    <file src="../../CHANGELOG-FORK.md" target="CHANGELOG-FORK.md" />
+    <file src="../../DFe.Classes/bin/Release/net10.0/DFe.Classes.dll" target="lib/net10.0/DFe.Classes.dll" />
+    <file src="../../DFe.Utils/bin/Release/net10.0/DFe.Utils.dll" target="lib/net10.0/DFe.Utils.dll" />
+    <file src="../../DFe.Wsdl/bin/Release/net10.0/DFe.Wsdl.dll" target="lib/net10.0/DFe.Wsdl.dll" />
+    <file src="../../NFe.Classes/bin/Release/net10.0/NFe.Classes.dll" target="lib/net10.0/NFe.Classes.dll" />
+    <file src="../../NFe.Utils/bin/Release/net10.0/NFe.Utils.dll" target="lib/net10.0/NFe.Utils.dll" />
+    <file src="../../NFe.Wsdl.Standard/bin/Release/net10.0/NFe.Wsdl.Standard.dll" target="lib/net10.0/NFe.Wsdl.Standard.dll" />
+    <file src="../../NFe.Servicos/bin/Release/net10.0/NFe.Servicos.dll" target="lib/net10.0/NFe.Servicos.dll" />
+  </files>
+</package>
